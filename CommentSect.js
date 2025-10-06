@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { View, Text, FlatList, TextInput, TouchableOpacity, StyleSheet, Image, } from "react-native";
 
-export default function CommentSection() {
+export default function CommentSect() {
   const [comments, setComments] = useState([
-    { id: "1", text: "Maayong gabie", avatar: require("./assets/picture.jpeg") },
-    { id: "2", text: "Kung ako nalang diay?", avatar: require("./assets/picture.jpeg") },
+    { id: "1", text: "Maayong gabie", avatar: require("./assets/Labos.jpeg") },
+    { id: "2", text: "Kung ako nalang diay?", avatar: require("./assets/Labos.jpeg") },
   ]);
   const [newComment, setNewComment] = useState("");
 
