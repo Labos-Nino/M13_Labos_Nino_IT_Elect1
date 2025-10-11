@@ -1,19 +1,20 @@
-import Recipe from './Recipe';
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { KeyboardAvoidingView, Platform,Image,ScrollView } from "react-native";
+import ChatScreen from "./BubbleChat";
+import Comment from "./CommentSect";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Recipe />
-/>  {/* 👈 Call your RecipeBox component */}
-    </SafeAreaView>
+    
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+    
+
+      <BubbleChat/>
+      <CommentSect/>
+    </KeyboardAvoidingView>
+  
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});
