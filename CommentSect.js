@@ -12,7 +12,7 @@ export default function CommentSect() {
     if (newComment.trim().length === 0) return;
     setComments([
       ...comments,
-      { id: Date.now().toString(), text: newComment, avatar: require("./assets/picture.jpeg") }, // default avatar
+      { id: Date.now().toString(), text: newComment, avatar: require("./assets/Labos.jpeg") }, // default avatar
     ]);
     setNewComment("");
   };
