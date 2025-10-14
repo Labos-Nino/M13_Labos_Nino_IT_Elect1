@@ -12,7 +12,7 @@ export default function ChatBubble({ text, isMe, avatar }) {
     >
       {/* Avatar (local image) */}
       <Image
-        source={require("./assets/Labos.jpeg")} // avatar must be a require() image
+        source={require("./assets/picture.jpg")} // avatar must be a require() image
         style={{
           width: 40,
           height: 40,

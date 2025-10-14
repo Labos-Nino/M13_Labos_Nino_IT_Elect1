@@ -3,8 +3,8 @@ import { View, Text, FlatList, TextInput, TouchableOpacity, StyleSheet, Image, }
 
 export default function CommentSect() {
   const [comments, setComments] = useState([
-    { id: "1", text: "Maayong gabie", avatar: require("./assets/Labos.jpeg") },
-    { id: "2", text: "Kung ako nalang diay?", avatar: require("./assets/Labos.jpeg") },
+    { id: "1", text: "Maayong gabie", avatar: require("./assets/picture.jpg") },
+    { id: "2", text: "Kung ako nalang diay?", avatar: require("./assets/picture.jpg") },
   ]);
   const [newComment, setNewComment] = useState("");
 
@@ -12,7 +12,7 @@ export default function CommentSect() {
     if (newComment.trim().length === 0) return;
     setComments([
       ...comments,
-      { id: Date.now().toString(), text: newComment, avatar: require("./assets/Labos.jpeg") }, // default avatar
+      { id: Date.now().toString(), text: newComment, avatar: require("./assets/picture.jpg") }, // default avatar
     ]);
     setNewComment("");
   };
