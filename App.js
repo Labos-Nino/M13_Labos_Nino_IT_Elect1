@@ -1,7 +1,7 @@
 import React from "react";
 import { KeyboardAvoidingView, Platform,Image,ScrollView } from "react-native";
-import ChatScreen from "./BubbleChat";
-import Comment from "./CommentSect";
+import BubbleChat from "./BubbleChat";
+import CommentSect from "./CommentSect";
 
 export default function App() {
   return (
